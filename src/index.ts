@@ -9,6 +9,14 @@ btn1.addEventListener("click", () => {
   let valor2: number = Number(dato2.value);
   let valor3: number = Number(dato3.value);
 
+  function guiones(n:number){
+    let guion: string = "-";
+    for (let i = 0; i <= n; i++) {
+      guion = guion + "-";
+    }
+    console.log(guion);
+  };
+
   function guionX40(){
     let guion: string = "-";
     for (let i = 0; i <= 40; i++) {
@@ -18,9 +26,9 @@ btn1.addEventListener("click", () => {
   };
 
   if(valor3 == 1){
-    guionX40();
+    guiones();
     console.log("el resultado es : " valor1 + valor2);
-    guionX40();
+    guiones(60);
   }else if(valor3 == 2){
     guionX40();
     console.log("el resultado es :" valor1 - valor2);
